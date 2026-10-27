@@ -2,6 +2,7 @@
 
 namespace PrintNode;
 
+#[\AllowDynamicProperties]
 abstract class EntityDynamic extends Entity
 {
 
@@ -32,7 +33,7 @@ abstract class EntityDynamic extends Entity
 
     /**
      * Maps a json object to this entity
-     * 
+     *
      * @param string $json The JSON to map to this entity
      * @return string
      */
@@ -49,7 +50,7 @@ abstract class EntityDynamic extends Entity
 
     /**
      * Implements the jsonSerialize method
-     * 
+     *
      * @return string
      */
     #[\ReturnTypeWillChange]
